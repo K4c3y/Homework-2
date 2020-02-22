@@ -1,0 +1,108 @@
+/* setting size of the navbar  */
+
+.navbar {
+
+    min-height: 80px;
+    position: relative;
+    overflow: hidden;
+}
+
+
+/* color block on my name  */
+
+.myName {
+    position: absolute;
+    background-color: rgb(122, 113, 84);
+    color: white !important;
+    margin-left: 50px;
+    height: 80px;
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+/* background image within the body and font typ  */
+
+
+
+body {
+    background-image: url(http://fg-a.com/wallpapers/marble-white-1-2018.jpg);
+    background-color: #cccccc;
+    font-family: 'Source Code Pro', Arial, Helvetica, sans-serif ;
+   }
+
+   /* adding the bars within the navmenu */
+   .vl {
+    border-right: 1px solid grey;
+    border-top: 1px;
+    
+  }
+
+  /* bottom of page line  */
+
+.bottom-hr {
+    background-color: black;
+    min-height: 5px;
+    opacity: 0.5;
+}
+
+/* positioning copyright logo */
+
+footer p {
+    text-align: center;
+    font-size: 10px;
+    padding: auto;
+}
+
+
+/* scaling down for screensize 640 */
+
+@media only screen and (max-width: 640px) {
+    .container-sm {
+        position: sticky;
+        margin-left: 20px;
+    }
+
+    /* NOT WORKING  */
+    .myName {
+        display: flex;
+        justify-content: center;
+    }
+    .navbar {
+        display: flex;
+        justify-content: center;
+    }
+    img {
+        height: 500px;
+        width: 500px;
+    }
+    .single-post-content-wrapper {
+        text-align: left;
+    }
+
+}
+
+/* scaling down for screensize 786 */
+
+
+@media only screen and (max-width: 768px) {
+    .container-md {
+    position: sticky;
+     margin-right: 20px;
+    }
+    img {
+        height: 275px;
+        width: 275px;
+    }
+}
+
+/* scaling down for screensize 980 */
+
+
+@media only screen and (max-width: 980px) {
+    .container-lg {
+    position: sticky;
+    margin-right: 20px;
+    }
+
+}
